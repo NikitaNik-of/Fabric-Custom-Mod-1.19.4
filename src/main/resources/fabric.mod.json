@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "helloworld",
+	"version": "${version}",
+	"name": "helloworld",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/helloworld/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nnof.helloworld.ExampleMod"
+		],
+		"fabric-datagen": [
+			"nnof.helloworld.ExampleModDataGenerator"
+		]
+	},
+	"mixins": [
+		"helloworld.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
